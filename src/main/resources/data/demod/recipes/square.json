@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "demod:cube"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "demod:square"
+  }
+}
