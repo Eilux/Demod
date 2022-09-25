@@ -11,14 +11,14 @@ import net.minecraft.util.registry.Registry;
 import java.util.HashMap;
 
 public final class DemodItems {
-    private static HashMap<Identifier, Item> ITEMS = new HashMap<>();
+    private static final HashMap<Identifier, Item> ITEMS = new HashMap<>();
     public static void RegisterItems(){
         for (Identifier identifier : ITEMS.keySet()){
             Registry.register(Registry.ITEM, identifier, ITEMS.get(identifier));
         }
     }
     public static final Item SQUARE = new Item(new Item.Settings().group(ItemGroup.MISC));
-    public static final SwordItem POWER_SWORD = new SwordItem(ToolMaterials.DIAMOND, 999, -99f, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final SwordItem POWER_SWORD = new SwordItem(ToolMaterials.DIAMOND, 999, -3, new Item.Settings().group(ItemGroup.COMBAT));
     static {
         ITEMS.put(new Identifier(DemodMain.MODID,"square"), SQUARE);
         ITEMS.put(new Identifier(DemodMain.MODID, "power_sword"), POWER_SWORD);

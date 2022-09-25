@@ -4,8 +4,10 @@
   "package": "dev.bodner.jack.demod.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "PlayerAttackChangeMixin"
   ],
   "client": [
+    "MCClientAttackChange"
   ],
   "injectors": {
     "defaultRequire": 1
