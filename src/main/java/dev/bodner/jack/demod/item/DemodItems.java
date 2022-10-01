@@ -19,8 +19,16 @@ public final class DemodItems {
     }
     public static final Item SQUARE = new Item(new Item.Settings().group(ItemGroup.MISC));
     public static final SwordItem POWER_SWORD = new SwordItem(ToolMaterials.DIAMOND, 999, -3, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final SpeedtestItem QUICK_STICK = new SpeedtestItem(1,0, new Item.Settings().group(ItemGroup.COMBAT).maxCount(1));
+    public static final SpeedtestItem SLOW_STICK = new SpeedtestItem(1,1024.0f, new Item.Settings().group(ItemGroup.COMBAT).maxCount(1));
+
+    public static final SpeedtestItem NOPE_STICK = new SpeedtestItem(1,-1.0f, new Item.Settings().group(ItemGroup.COMBAT).maxCount(1));
+
     static {
         ITEMS.put(new Identifier(DemodMain.MODID,"square"), SQUARE);
         ITEMS.put(new Identifier(DemodMain.MODID, "power_sword"), POWER_SWORD);
+        ITEMS.put(new Identifier(DemodMain.MODID, "quick_stick"), QUICK_STICK);
+        ITEMS.put(new Identifier(DemodMain.MODID, "slow_stick"), SLOW_STICK);
+        ITEMS.put(new Identifier(DemodMain.MODID, "nope_stick"), NOPE_STICK);
     }
 }

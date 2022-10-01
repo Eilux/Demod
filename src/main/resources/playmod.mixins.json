@@ -4,9 +4,12 @@
   "package": "dev.bodner.jack.demod.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "AttackTickGetter",
+    "LivingEntityMixin",
     "PlayerAttackChangeMixin"
   ],
   "client": [
+    "DebugGui",
     "MCClientAttackChange"
   ],
   "injectors": {

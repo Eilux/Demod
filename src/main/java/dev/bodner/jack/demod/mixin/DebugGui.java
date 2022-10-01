@@ -17,5 +17,8 @@ public class DebugGui {
     @Inject(method = "render", at = @At(value = "TAIL"))
     public void attackSpeedDebugText(MatrixStack matrices, float tickDelta, CallbackInfo ci){
         client.textRenderer.drawWithShadow(matrices, String.valueOf(client.player.getAttackCooldownProgress(0)), 10, 10, 0xffffffff);
+        client.textRenderer.drawWithShadow(matrices, String.valueOf(((AttackTickGetter) client.player).getAttackTick()), 10, 20, 0xffffffff);
+        client.textRenderer.drawWithShadow(matrices, String.valueOf(client.player.getAttackCooldownProgressPerTick()), 10, 30, 0xffffffff);
+
     }
 }

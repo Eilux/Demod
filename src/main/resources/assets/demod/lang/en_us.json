@@ -1,5 +1,8 @@
 {
   "block.demod.cube": "DeCube",
   "item.demod.square": "DeSquare",
-  "item.demod.power_sword": "DeSword"
+  "item.demod.power_sword": "DeSword",
+  "item.demod.slow_stick": "Slow Stick",
+  "item.demod.quick_stick": "Quick Stick",
+  "item.demod.nope_stick": "Nope Stick"
 }
